@@ -44,8 +44,7 @@ A validação foi realizada por meio de uma tabela no Looker Studio contendo:
 Os resultados confirmaram o funcionamento correto da regra.
 
 ## 📊 Etapa 2 — Regras de Negócio — Controle de Perdas
-
-## ✔️ Status do Projeto
+✔️ Status do Projeto
 
 ### Etapa concluída: Modelagem e Validação de KPIs
 
