@@ -1,2 +1,15 @@
-# analise-controle-perdas-energia
-Projeto de monitoramento de perdas de energia e detecção de irregularidades usando Looker Studio e Google Sheets.
+# Projeto: Controle de Perdas de Energia ⚡
+
+## Objetivo
+Este projeto visa identificar desvios de consumo de energia elétrica para detectar possíveis ligações irregulares ("gatos"), utilizando ferramentas de análise de dados.
+
+## Tecnologias Utilizadas
+- **Google Sheets**: Armazenamento e estruturação dos dados.
+- **Looker Studio**: Criação do dashboard interativo e visualização de dados.
+- **GitHub**: Documentação e portfólio.
+
+## Status do Projeto
+- [x] Estruturação da base de dados fictícia.
+- [ ] Conexão com Looker Studio.
+- [ ] Criação de campos calculados (KPIs de perda).
+- [ ] Dashboard finalizado.
