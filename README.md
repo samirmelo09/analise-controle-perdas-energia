@@ -10,6 +10,6 @@ Este projeto visa identificar desvios de consumo de energia elétrica para detec
 
 ## Status do Projeto
 - [x] Estruturação da base de dados fictícia.
-- [ ] Conexão com Looker Studio.
-- [ ] Criação de campos calculados (KPIs de perda).
+- [x] Conexão com Looker Studio.
+- [x] Criação de campos calculados (KPIs de perda).
 - [ ] Dashboard finalizado.
