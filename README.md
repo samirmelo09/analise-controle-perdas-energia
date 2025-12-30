@@ -42,3 +42,41 @@ A validação foi realizada por meio de uma tabela no Looker Studio contendo:
 - Classificação de suspeita
 
 Os resultados confirmaram o funcionamento correto da regra.
+
+## 📊 Etapa 2 — Regras de Negócio — Controle de Perdas
+
+## ✔️ Status do Projeto
+
+### Etapa concluída: Modelagem e Validação de KPIs
+
+- Criação de regras de detecção de consumo suspeito
+- Implementação de campos calculados no Looker Studio
+- Validação de unidades suspeitas por ID distinto
+- Correção de agregações incorretas em KPIs
+- Testes de sanidade para garantir confiabilidade dos indicadores
+
+KPIs validados:
+- Total de Unidades Distintas
+- Unidades Suspeitas Distintas
+- Percentual de Unidades Suspeitas
+
+## Classificação de Consumo Suspeito
+
+Uma unidade consumidora é classificada como **Suspeita** quando:
+
+- O desvio percentual de consumo é maior ou igual a 30%
+
+Fórmula aplicada:
+
+(desvio_consumo_percentual >= 30%)
+
+## Indicadores Principais
+
+- Total de Unidades Distintas:
+  COUNT_DISTINCT(id_unidade_consumidora)
+
+- Unidades Suspeitas Distintas:
+  COUNT_DISTINCT(id_unidade_consumidora WHERE classificacao = "Suspeito")
+
+- Percentual de Unidades Suspeitas:
+  unidades_suspeitas_distintas / total_unidades_distintas
