@@ -14,6 +14,11 @@ Este projeto visa identificar desvios de consumo de energia elétrica para detec
 - [x] Criação de campos calculados (KPIs de perda).
 - [ ] Dashboard finalizado.
 
+## Identidade visual
+- Azul/Turquesa (cor principal – marca) #00A6C8 / RGB(0, 166, 200)
+- Laranja (cor de destaque) #F57C20 / RGB(245, 124, 32)
+- Branco (fundo / respiro) #FFFFFF / RGB(255,255,255)
+- Cinza neutro (para textos secundários) #6E6E6E / RGB: (110, 110, 110)
 
 ## 📊 Etapa 1 — Validação de Regras de Negócio
 
