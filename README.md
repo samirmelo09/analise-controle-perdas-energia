@@ -73,5 +73,8 @@ Uma unidade consumidora é classificada como **Suspeita** quando:
 
 - O desvio percentual de consumo é maior ou igual a 40%
 
+Dashborad:
 <img width="1363" height="643" alt="image" src="https://github.com/user-attachments/assets/1b7c51b2-162e-43ca-9af7-b79971d2af01" />
+Tabela de dados ficticios utilizoda:
+https://docs.google.com/spreadsheets/d/1VX_bBt1_yDxToRsYEVHtXB3H7Vm1L17SzxxCfLj1jYo/edit?usp=sharing
 
