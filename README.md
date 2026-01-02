@@ -72,3 +72,6 @@ KPIs validados:
 Uma unidade consumidora é classificada como **Suspeita** quando:
 
 - O desvio percentual de consumo é maior ou igual a 40%
+
+<img width="1363" height="643" alt="image" src="https://github.com/user-attachments/assets/1b7c51b2-162e-43ca-9af7-b79971d2af01" />
+
