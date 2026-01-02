@@ -22,15 +22,23 @@ Este projeto visa identificar desvios de consumo de energia elétrica para detec
 
 ## 📊 Etapa 1 — Validação de Regras de Negócio
 
-Nesta etapa foi construída e validada a regra de identificação de possíveis perdas de energia elétrica, com base na comparação entre consumo estimado e consumo medido.
+Para este projeto, foram desenvolvidas métricas personalizadas no Looker Studio:
 
-### 🔢 Regra de cálculo do desvio percentual
-(consumo_medido_kwh - consumo_estimado) / consumo_estimado
+### 1. Desvio de Consumo %
+Identifica a variação percentual entre o que foi consumido e o que era esperado.
+`Fórmula: (consumo_medido_kwh - consumo_estimado) / consumo_estimado`
 
-### 🚨 Classificação de suspeita
+### 2. Perda Financeira Estimada (R$)
+Calcula o prejuízo monetário baseado na tarifa média paga pelo cliente.
+`Fórmula: (consumo_estimado - consumo_medido_kwh) * (valor_faturado / consumo_medido_kwh)`
 
-- Desvio ≥ 30% → **Suspeito**
-- Desvio < 30% → **Normal**
+### 3. Classificação de Alerta
+Automação para categorizar o risco:
+
+CASE 
+  WHEN Desvio_Consumo <= -0.4 THEN "🚨 ALERTA: Suspeita de Gato"
+  ELSE "✅ Consumo Normal"
+END
 
 ### ✅ Validação
 
@@ -56,26 +64,11 @@ Os resultados confirmaram o funcionamento correto da regra.
 
 KPIs validados:
 - Total de Unidades Distintas
-- Unidades Suspeitas Distintas
-- Percentual de Unidades Suspeitas
+- Possiveis perdas de valores
+- Consumo total identificado
 
 ## Classificação de Consumo Suspeito
 
 Uma unidade consumidora é classificada como **Suspeita** quando:
 
-- O desvio percentual de consumo é maior ou igual a 30%
-
-Fórmula aplicada:
-
-(desvio_consumo_percentual >= 30%)
-
-## Indicadores Principais
-
-- Total de Unidades Distintas:
-  COUNT_DISTINCT(id_unidade_consumidora)
-
-- Unidades Suspeitas Distintas:
-  COUNT_DISTINCT(id_unidade_consumidora WHERE classificacao = "Suspeito")
-
-- Percentual de Unidades Suspeitas:
-  unidades_suspeitas_distintas / total_unidades_distintas
+- O desvio percentual de consumo é maior ou igual a 40%
